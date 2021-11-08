@@ -26,7 +26,7 @@ jobs:
         echo "::set-output name=branch::$branch"
     # Runs the Checkmarx Scan leveraging the latest version of CxFlow - REFER to Action README for list of inputs
     - name: Checkmarx CxFlow Action
-      uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.1
+      uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.3
       with:
         project: GitHub-WebGoat-8-${{ steps.get-branch.outputs.branch }}
         team: '/CxServer/OWASP/Java/WebGoat-8/GitHub'
